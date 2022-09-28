@@ -1,13 +1,17 @@
 <template>
-  <div class=" divide-y-2 w-full">
+    <div class=" divide-y-2 w-full mb-8">
     <div class="flex">
       <button @click="$router.back()" class=" -mt-4 text-2xl font-bold px-3">
         <font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
-    <div class="px-16 text-center text-3xl -mt-4 font-bold py-4">Profila</div>
+        <div class="mx-7 ">
+    <img class="mx-8 mb-3" src="../assets/profila.png" alt=""/>
     </div>
+    </div>
+    <div></div>
+  </div>
     
     <div class="text-black text-xl text-center font-bold py-2">Your Country of residence</div>
-  </div>
+
       <div class="text-gray-400 px-2 text-center text-sm">This Information will help us understand which privacy laws apply to where you live in. </div>
       <div class="w-full md:w-1/3 px-3 lg:w-full mb-6 md:mb-0">
         <br />
