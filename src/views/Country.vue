@@ -10,9 +10,9 @@
     <div></div>
   </div>
     
-    <div class="text-black text-xl text-center font-bold py-2">Your Country of residence</div>
+    <div class="h2 text-black text-xl text-center font-bold py-2">Your Country of residence</div>
 
-      <div class="text-gray-400 px-2 text-center text-sm">This Information will help us understand which privacy laws apply to where you live in. </div>
+      <div class="h2 text-gray-400 px-2 text-center text-sm">This Information will help us understand which privacy laws apply to where you live in. </div>
       <div class="w-full md:w-1/3 px-3 lg:w-full mb-6 md:mb-0">
         <br />
                   <label
