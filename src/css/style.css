@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Puffin-Regular";
+    src: local("Puffin-Regular"),
+        url(../assets/fonts/Puffin-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Puffin-SemiBold";
+    src: local("Puffin-SemiBold"),
+        url(../assets/fonts/Puffin-SemiBold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Puffin-SemiBoldItalic";
+    src: local("Puffin-SemiBoldItalic"),
+        url(../assets/fonts/Puffin-SemiBoldItalic.otf) format("truetype");
+}

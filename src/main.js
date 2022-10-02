@@ -2,8 +2,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import "./assets/tailwind.css";
-import "./assets/main.css";
+import "./css/style.css"
 import { Tabs, Tab } from "vue3-tabs-component";
 import vueCountryRegionSelect from 'vue3-country-region-select';
 import VueTelInput from 'vue3-tel-input'
@@ -17,7 +16,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faArrowLeft , faCaretUp} from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faArrowLeft, faCaretUp)
