@@ -1,64 +1,21 @@
 <template>
-  <div class=" divide-y-2 w-full mb-8">
-    <div class="flex">
-      <button @click="$router.back()" class=" -mt-4 text-2xl font-bold px-3">
-        <font-awesome-icon icon="fa-solid fa-arrow-left" />
-      </button>
-      <div class="mx-7 ">
-        <img class="mx-8 mb-3" src="../assets/profila.png" alt="" />
-      </div>
+  <div class="text-center h-full text-xl md:px-8 px-4 md:py-10 py-8 flex flex-col items-center w-full heightCalc">
+    <p class="md:text-[22px] text-xl lg:px-8 text-black font-bold py-2 lg:pt-0">
+      Gender
+    </p>
+    <p class="text-sm px-4 md:px-0 text-gray-800 pt-2">Brands often have gender-specific content and offers.</p>
+    <div class="w-full md:pb-8 pt-5 space-y-3 mt-auto">
+      <button @click="$router.push('/Birthdate')"
+        class="text-left font-bold w-full text-xs text-black border tracking-wide border-primary-400 rounded-lg py-4 px-4 focus:outline-none focus:border-primary-500">Male</button>
+      <button @click="$router.push('/Birthdate')"
+        class="text-left font-bold w-full text-xs text-black border tracking-wide border-primary-400 rounded-lg py-4 px-4 focus:outline-none focus:border-primary-500">Female</button>
+
+      <button @click="$router.push('/Birthdate')"
+        class="text-left font-bold w-full text-xs text-black border tracking-wide border-primary-400 rounded-lg py-4 px-4 focus:outline-none focus:border-primary-500">Other</button>
+
+      <button @click="$router.push('/Birthdate')"
+        class="text-left font-bold w-full text-xs text-black border tracking-wide border-primary-400 rounded-lg py-4 px-4 focus:outline-none focus:border-primary-500">Prefer
+        not to say</button>
     </div>
-    <div></div>
   </div>
-
-  <div class="h1 text-black text-xl text-center font-bold py-5">Gender</div>
-  <div class="h2 text-gray-400 px-2 text-center text-sm ">Brands often have gender-specific content and offers. </div>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
-  <button @click="toInfoAdded"
-    class="h2 appearance-none text-left font-bold my-4 block w-full text-xs text-black border border-[#4ea6cc] rounded-lg py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#4ea6cc]">Male</button>
-  <button @click="toInfoAdded"
-    class="h2 appearance-none text-left font-bold my-4 block w-full text-xs text-black border border-[#4ea6cc] rounded-lg py-4 px-4 py2 leading-tight focus:outline-none focus:bg-white focus:border-[#4ea6cc]">Female</button>
-
-  <button @click="toInfoAdded"
-    class="h2 appearance-none  text-left font-bold my-4 block w-full text-xs text-black border border-[#4ea6cc] rounded-lg py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#4ea6cc]">Other</button>
-
-  <button @click="toInfoAdded"
-    class="h2 appearance-none text-left font-bold my-4 block w-full text-xs text-black border border-[#4ea6cc] rounded-lg py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#4ea6cc]">Prefer
-    not to say</button>
-
-
-
 </template>
-
-<script>
-import Datepicker from 'vue3-datepicker'
-import { ref } from 'vue'
-const picked = ref(new Date())
-export default {
-  name: "phoneLink",
-  data: () => ({
-    country: '',
-    region: ''
-  }),
-  methods: {
-    toInfoAdded() {
-      this.$router.push({
-
-        path: '/InfoAdded',
-
-      })
-    }
-
-
-  },
-
-};
-</script>

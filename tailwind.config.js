@@ -17,7 +17,9 @@ module.exports = {
       primary: {
         50: "#e1f1f8",
         100: "#87cae1",
-        500: "#59abcf"
+        400: "#4ea6cc",
+        500: "#59abcf",
+        600: "#e1f2f8"
       },
       transparent: colors.transparent,
       black: colors.black,
@@ -32,6 +34,7 @@ module.exports = {
         300: "#d0d1de",
         400: "#4d5058",
         600: "#d6d8e3",
+        650: "#616369",
         800: "#8a93b0",
         900: "#9da2b0"
       },

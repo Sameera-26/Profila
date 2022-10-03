@@ -19,3 +19,7 @@
     src: local("Puffin-SemiBoldItalic"),
         url(../assets/fonts/Puffin-SemiBoldItalic.otf) format("truetype");
 }
+
+.heightCalc {
+    height: calc(100% - 60px)
+}

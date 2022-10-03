@@ -1,93 +1,22 @@
 <template>
-  <div class=" divide-y-2 w-full mb-8">
-    <div class="flex">
-      <button @click="$router.back()" class=" -mt-4 text-2xl font-bold px-3">
-        <font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
-        <div class="mx-7 ">
-    <img class="mx-8 mb-3" src="../assets/profila.png" alt=""/>
+  <div class="text-center h-full text-xl md:px-8 px-4 md:py-10 py-8 flex flex-col items-center w-full heightCalc">
+    <p class="md:text-[22px] text-xl lg:px-8 text-black font-bold py-2">
+      Your nickname
+    </p>
+    <p class="md:text-sm text-lg text-gray-800 pt-2">Brands and Platforms will refer to this nickname</p>
+    <div class="w-full pb-8 pt-5">
+      <label class="block tracking-wide text-left text-gray-100 text-xs font-bold mb-2" for="name">
+        Nickname
+      </label>
+      <input
+        class="appearance-none block w-full text-xs bg-gray-150 focus:border-primary-100 text-gray-800 border-2 border-gray-600 rounded-lg p-4 leading-tight focus:outline-none placeholder-gray-800"
+        type="text" placeholder="Your Nickname" />
     </div>
-    </div>
-    <div></div>
-  </div>
-    <div class="h2 text-[#2c2f37] text-xl text-center font-bold py-2">Your nickname</div>
-    
-    <div class="h2 text-[#7a8094] px-2 text-center text-[88%]">Brands and Platforms will refer to this nickname </div>
-      <div class="w-full md:w-1/3 px-3 lg:w-full mb-6 md:mb-0">
-        <br />
-                  <label
-                    class="h2 block capitalize tracking-wide text-[#a7aac1] text-left text-xs   mb-2"
-                    for="nickname"
-                  >
-                    Nickname
-                  </label>
-                  <input
-                    class="appearance-none block w-full text-xs text-[#8a93b0] border border-[#4ea6cc] rounded-lg py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#4ea6cc]"
-                    id="nickname"
-                    type="text"
-                    v-model="state.text"
-                    
-                  />
-                </div>
-
-    <br />
-  
-  <br />
-  <div class="text-center py-12 mt-16">
-    <button  @click="toCountry" class="h2 bg-[#4ea6cc] w-full text-white text-md px-5 py-3 rounded-lg">
+    <button @click="$router.push('/Country')"
+      class="bg-primary-100 mt-auto w-full text-white text-xs py-3.5 rounded-lg">
       Proceed
     </button>
-    </div>
-  
+  </div>
+
 </template>
-
-<script>
-  import useValidate, { useVuelidate } from '@vuelidate/core'
-import { required , email } from '@vuelidate/validators'
-import { reactive , computed } from 'vue';
-export default {
-name: "Login",
-setup () {
-  const state = reactive({
-    text:'',
-
-  })
-  const rules = computed (() => {
-    return {
-      text: { required },
-
-    }
-  })
-  const v$ = useVuelidate(rules, state)
-  return {
-    state,
-    v$
-  }
-},
-
-data() {
-  return {
-
-    v$: useVuelidate(),
-    text: '',
-
-  };
-},
-methods: {
-  toCountry(){
-    console.log(this.v$)
-    this.v$.$validate() // checks all inputs
-    if (!this.v$.$error) {
-      this.$router.push('/Country')
-    } 
-  },
-},
-validations() {
-  return {
-    text: { required },
-    
-
-    
-  }
-},
-}
-</script>
+<script></script>

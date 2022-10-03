@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-primary-50 h-screen">
-    <router-view />
-  </div>
+  <Layout />
 </template>
+<script setup>
+import Layout from "./layout/default.vue"
+</script>
