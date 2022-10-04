@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import phoneLink from '../views/phoneLink.vue';
+import PhoneLink from '../views/phoneLink.vue';
 import Login from '../views/Login.vue';
-import emailLink from '../views/emailLink.vue';
+import Verification from '../views/verification.vue';
+import EmailLink from '../views/emailLink.vue';
 import Zeke from '../views/Zeke.vue';
 import Birthdate from '@/views/Birthdate.vue';
 import Country from '@/views/Country.vue'
@@ -19,14 +20,19 @@ const router = createRouter({
       component: Login
     },
     {
+      path: '/verification',
+      name: 'Verification',
+      component: Verification
+    },
+    {
       path: '/phoneLink',
       name: 'phoneLink',
-      component: phoneLink
+      component: PhoneLink
     },
     {
       path: '/emailLink',
       name: 'emailLink',
-      component: emailLink
+      component: EmailLink
     },
     {
       path: '/Zeke',
